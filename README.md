@@ -2,7 +2,13 @@
 
 Classical yacc thermostat example (https://tldp.org/HOWTO/Lex-YACC-HOWTO-4.html#ss4.1) implemented using goyacc and a simple text/scanner
 
-## Example
+## Building
+
+```
+$ ./build.bash
+```
+
+## Usage
 
 ```
 $ cat thermo.stat
