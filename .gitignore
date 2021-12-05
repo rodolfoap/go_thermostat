@@ -1,0 +1,9 @@
+*~
+y.output
+y.go
+app
+app.go
+*.o
+*.a
+*.sum
+tsparse
