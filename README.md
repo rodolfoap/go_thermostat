@@ -26,4 +26,8 @@ heat off
 target temperature 22
 	New temperature set to 22!
 
+$ ./tsparse go.mod
+
+module
+2021/12/05 22:12:50 Parse error: Unrecognized token.
 ```

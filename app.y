@@ -46,9 +46,10 @@ func(l *MainLex)Lex(lval *yySymType)int{
 			return TOKTARGET;
 		case "temperature":
 			return TOKTEMPERATURE;
+		default:
+			l.Error("Unrecognized token.")
 		}
 	case scanner.Int:
-		fmt.Printf("%v ", lit)
 		lval.value=lit;
 		return NUMBER
 	}
@@ -56,6 +57,7 @@ func(l *MainLex)Lex(lval *yySymType)int{
 }
 
 func (x *MainLex) Error(s string) {
+	fmt.Printf("\n")
 	log.Printf("Parse error: %s", s)
 }
 
